@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simulador de Empréstimos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    teste
+    <div class="container">
+        <h1>Simulador de Empréstimos</h1>
+        
+        <div class="input-group">
+            <label for="valor-maximo-parcela">Valor Máximo de Parcela (R$)</label>
+            <input type="number" id="valor-maximo-parcela" placeholder="Insira o valor máximo da parcela" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="valor-necessario">De quanto você precisa? (R$)</label>
+            <input type="number" id="valor-necessario" placeholder="Insira o valor que precisa" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="quantidade-parcelas">Em quantas parcelas você quer pagar?</label>
+            <input type="number" id="quantidade-parcelas" placeholder="Número de parcelas" required>
+        </div>
+        
+        <button id="simular" onclick="simularEmprestimo()">Simular Empréstimo</button>
+        
+        <div id="resultado" class="resultado">
+            <p id="resumo-emprestimo"></p>
+            <p id="detalhes-emprestimo"></p>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
 </body>
 </html>
